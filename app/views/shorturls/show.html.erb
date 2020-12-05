@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Targeturl:</strong>
+  <%= @shorturl.targeturl %>
+</p>
+
+<p>
+  <strong>Shorturl:</strong>
+  <%= @shorturl.shorturl %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @shorturl.user_id %>
+</p>
+
+<%= link_to 'Edit', edit_shorturl_path(@shorturl) %> |
+<%= link_to 'Back', shorturls_path %>

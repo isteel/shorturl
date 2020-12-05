@@ -1,0 +1,27 @@
+<%= form_with(model: shorturl, local: true) do |form| %>
+  <% if shorturl.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(shorturl.errors.count, "error") %> prohibited this shorturl from being saved:</h2>
+
+      <ul>
+        <% shorturl.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :targeturl %>
+    <%= form.text_field :targeturl %>
+  </div>
+
+  <div class="field">
+    <%= form.label :shorturl %>
+    <%= form.text_field :shorturl %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
