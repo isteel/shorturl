@@ -1,24 +1,21 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Code Challenge on behalf of Healios.
 
-Things you may want to cover:
+## Installation
 
-* Ruby version
+Standard Rails application using Bundler.
 
-* System dependencies
+Before running please ensure you edit config/database.yml to provide full access to an empty database for development and another for tests.
 
-* Configuration
+## Tests
 
-* Database creation
+```
+bundle exec cucumber
+```
 
-* Database initialization
+## Author
 
-* How to run the test suite
+Ian Steel
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+December 2020

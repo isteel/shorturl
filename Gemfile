@@ -29,6 +29,7 @@ gem 'jbuilder', '~> 2.7'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
+gem 'validate_url'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -46,7 +47,11 @@ end
 
 group :test do
   # Adds support for Capybara system testing and selenium driver
+  gem 'cucumber-rails'
   gem 'capybara', '>= 2.15'
+  gem 'database_cleaner'
+  gem 'factory_bot_rails'
+  gem 'rspec'
   gem 'selenium-webdriver'
   # Easy installation and use of web drivers to run system tests with browsers
   gem 'webdrivers'

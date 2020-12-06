@@ -15,9 +15,9 @@
   <tbody>
     <% @shorturls.each do |shorturl| %>
       <tr>
-        <td><%= shorturl.targeturl %></td>
+        <td class="target_cell"><%= shorturl.targeturl %></td>
         <td><%= shorturl.shorturl %></td>
-        <td><%= shorturl.invocation_count %></td>
+        <td class="invocation_count"><%= shorturl.invocation_count %></td>
         <td><%= link_to 'Show', shorturl %></td>
         <td><%= link_to 'Edit', edit_shorturl_path(shorturl) %></td>
         <td><%= link_to 'Destroy', shorturl, method: :delete, data: { confirm: 'Are you sure?' } %></td>

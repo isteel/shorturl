@@ -8,13 +8,13 @@ default: &default
   adapter: mysql2
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   timeout: 5000
+  host: localhost
 
 development:
   <<: *default
   database: healios_shorten_dev
   username: helios_dev
   password: Tpw4Hd84
-  host: localhost
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -22,6 +22,8 @@ development:
 test:
   <<: *default
   database: healios_shorten_test
+  username: heliostest
+  password: ApwFtHsA
 
 production:
   <<: *default
